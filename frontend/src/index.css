@@ -1,0 +1,50 @@
+*{
+  margin:0;
+  padding:0:
+}
+.app{
+  padding: 0;
+  margin:0;  
+}
+.nav-ul{
+  margin: 0;
+  padding: 5px;
+  background-color: skyblue;
+  display:flex;
+  list-style-type: none;
+  justify-content: space-between;
+
+}
+.nav-ul li a{
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: skyblue;
+}
+
+.Register{
+  margin-left: 30%;
+  
+}
+
+.inputBox{
+  display: block;
+  margin:25px;
+  padding:7px;
+  width:300px;
+  border:1px solid #a1f3e1;
+}
+.appButton{
+  margin:25px;
+  padding:10px;
+  width:150px;
+  background-color: skyblue;
+  border:1px solid #a1f3e1;
+  cursor:pointer;
+}
