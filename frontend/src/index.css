@@ -5,32 +5,46 @@
 .app{
   padding: 0;
   margin:0;  
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between; ;
 }
 .nav-ul{
-  margin: 0;
-  padding: 5px;
+  width: 100%;
+  padding: 18px;
   background-color: skyblue;
   display:flex;
   list-style-type: none;
-  justify-content: space-between;
-
-}
+  gap: 30px;
+  }
+  .nav-right{
+    justify-content: flex-end;
+  }
 .nav-ul li a{
   color: #fff;
-  padding: 5px;
-  text-decoration: none;
+  padding:25px;
+  text-decoration: none; 
+  text-align: right;
 }
 .footer{
+    margin-right: 0px;
     position: absolute;
     bottom: 0;
     text-align: center;
+    padding:12px;
     width: 100%;
     background-color: skyblue;
 }
 
-.Register{
+.Register , .product{
   margin-left: 30%;
   
+}
+.login{
+  margin-left: 30%;
+  margin-top: 100px;
 }
 
 .inputBox{
@@ -47,4 +61,43 @@
   background-color: skyblue;
   border:1px solid #a1f3e1;
   cursor:pointer;
+}
+.logo{
+  width: 25px;
+  height: 25px;
+  margin-top: 7px ;
+  margin-left: 7px ;
+  margin-left: px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+
+}
+.invalid-input{
+  color:red;
+  margin-top: -20px;
+  display:block;
+  margin-left:20px;
+}
+
+.product-list{
+  text-align: center;
+  margin-top:50px
+}
+
+.product-list ul li{
+  display:inline-block;
+  border:1px solid skyblue;
+  padding:5px;
+  width:150px;
+  }
+  .product-list ul {
+    margin:0;
+  }
+.searchBox{
+  width:400px;
+  margin:20px;
+  height:40px;
+  border:1px solid skyblue;
+  padding-left:20px;
 }

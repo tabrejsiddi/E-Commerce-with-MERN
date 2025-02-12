@@ -13,7 +13,7 @@ export const SignUp = () => {
     if (auth) {
       navigate("/home");
     }
-  });
+  },[]);
 
   // function to collect data and send API request
   const collectData = async () => {
@@ -29,7 +29,8 @@ export const SignUp = () => {
     result = await result.json();
     console.warn(result);
     // we want to store data on local storage
-    localStorage.setItem("user", JSON.stringify(result));
+    localStorage.setItem("user", JSON.stringify(result.result));
+    localStorage.setItem("token", JSON.stringify(result.auth));
 
     // redirect to home page
     navigate("/home");
